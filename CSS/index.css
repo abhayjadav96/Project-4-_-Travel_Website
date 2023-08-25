@@ -1,0 +1,1500 @@
+ /* - FONTS - */
+
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins');
+
+/* Default CSS */
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+/* Global CSS */
+
+.flex{
+
+    display: flex;
+    justify-content: center;
+}
+
+.txt_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade_css{
+
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: multiply;
+    transition: 0.4s;
+}
+
+/* Header Section CSS */
+
+.header{
+
+    width: 100%;
+    /* background-color: red; */
+    position: fixed;
+    box-sizing: content-box;
+    z-index: 10;
+}
+
+.container{
+
+    width: 70%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid darkgrey;
+}
+
+.header_left{
+
+    width: 70%;
+    display: flex;
+    padding: 14px 0 10px 0;
+}
+
+.search_bar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}  
+
+.search_icon{
+
+    width: 5%;
+}
+
+.search_header{
+
+    flex-grow: 1;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+.search_header::placeholder{
+
+    color: darkgrey;
+    text-indent: 12px;
+}
+
+.logo{
+
+    height: 35px;
+    width: 30%;
+    background-image: url(../Media/Logo.png);
+    background-position: 0 -186px;
+}
+
+
+/* //Header right */
+
+.header_right{
+    display: flex;
+    width: 30%;
+    align-self: flex-end;
+    height: 60px;
+}
+
+.nav_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 14px;
+    list-style-type: none;
+
+}
+
+.nav_menu{
+
+    display: flex;
+    height: 35px;
+    /* background-color: grey; */
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.nav_new{
+
+    font-size: 9px;
+    background-color: #ff5300;
+    padding: 3px;
+    transform: translateY(-12px);
+}
+
+.nav_gift{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    word-spacing: 2px;
+    margin-left: 5px;
+}
+
+.nav_hover{
+
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_gift:hover, .nav_hover:hover{
+
+    border-bottom: 3px solid #ff5300;
+}
+
+
+.header_right:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+/* --------------------------------------Background Banner------------------------------------------------------------ */
+
+.hs_banner{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(../Media/bg_cover.jpg);
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
+.banner_container{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    width: 70%;
+}
+
+
+.hp_title{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.slider_container{
+
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.slider{
+
+    height: 500px;
+    width: 100%;
+    line-height: 100px;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+    animation-name: slider;
+    animation-duration: 10s;
+}
+
+.slider_title1{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+}
+
+@keyframes slider{
+    
+    12.5%{
+
+        margin-top: -100px;
+    }
+    
+    25%{
+
+        margin-top: -100px;
+    }
+
+        
+    37.5%{
+
+        margin-top: -200px;
+    }
+    
+    50%{
+
+        margin-top: -200px;
+    }
+
+        
+    62.5%{
+
+        margin-top: -300px;
+    }
+    
+    75%{
+
+        margin-top: -300px;
+    }
+
+        
+    87.5%{
+
+        margin-top: -400px;
+    }
+    
+    100%{
+
+        margin-top: -400px;
+    }
+}
+
+
+/* -------------------------------------Banner Search Bar CSS------------------------------------- */
+
+.main_search_bar{
+
+    height: 90px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hp_buttons{
+    height: 40px;
+    margin-bottom: 1px;
+
+}
+
+.btn1{
+
+    height: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 2px;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 5px;
+    background-color: rgb(66, 59, 59,0.9);
+    transition: .4s;
+}
+
+.btn1:hover{
+
+    cursor: pointer;
+    background-color: #ff5300;
+}
+
+.btn1:last-child{
+    margin-right: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn1:first-child{
+
+    background-color: #ff5300;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.main_search_holder{
+
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_search{
+
+    width: 95%;
+    height: 50px;
+    outline: none;
+    border: none;
+    text-indent: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    /* border-radius: 5px; */
+}
+
+.search_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 23px;
+}
+
+
+/* --------------------------------------Banner Footer-------------------------------------- */
+
+.banner_footer{
+
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 60%;
+    /* background-color: azure; */
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer_container1{
+
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 80px;
+    /* background-color: bisque; */
+}
+
+
+.icon_footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.icon_ftr{
+
+    font-size: 30px;
+    color: rgb(170, 170, 170);
+}
+
+.text_footer{
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+    height: 80px;
+    width: 70%;
+    /* background-color: red; */
+    font-family: 'Poppins', sans-serif;
+    margin-right: 15px;
+}
+
+.text_footer:hover{
+
+    color: white;
+    cursor: pointer;
+}
+
+.icon_ftr:hover{
+
+    color: white;
+    cursor: pointer;    
+}
+
+/* ------------------------------------------------Hot Deals Offers-------------------------------------- */
+
+.perfect_container{
+
+    padding-top: 80px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.perfect_container_holder{
+
+    width: 70%;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfect_tagline{
+
+    width: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-family: poppins;
+}
+
+.perfect_text_1{
+    
+    font-family: poppins;
+    font-size: 13px;
+    color: rgb(93, 93, 93);
+}
+
+.perfect_text_1::before{
+
+    content: "";
+    display: flex;
+    width: 55px;
+    height: 2px;
+    background-color: #ff5300;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.perfect_img1{
+
+    height: 350px;
+    width: 20%;
+    background-image: url('../Media/Frame_1.jpg');
+    background-size: cover;
+    border-radius: 16px;
+    margin-right: 30px;
+    transition: 0.4s;
+}
+
+.perfect_img1:hover{
+
+    cursor: pointer;
+    box-shadow: 0 0 13px rgba(0,0,0,0.6);
+    height: 380px;
+    width: 22%;
+}
+
+.perfect_img2{
+
+    height: 350px;
+    width: 20%;
+    border-radius: 16px;
+    background-image: url('../Media/Frame_2.png');
+    background-size: cover;
+    margin-right: 30px;
+    transition: 0.4s;
+}
+
+.perfect_img2:hover{
+
+    cursor: pointer;
+    box-shadow: 0 0 13px rgba(0,0,0,0.6);
+    height: 380px;
+    width: 22%;
+}
+
+.perfect_img3{
+
+    height: 350px;
+    width: 20%;
+    border-radius: 16px;
+    background-image: url('../Media/Frame_3.png');
+    background-size: cover;
+    transition: 0.4s;
+}
+
+.perfect_img3:hover{
+
+    cursor: pointer;
+    box-shadow: 0 0 13px rgba(0,0,0,0.6);
+    height: 380px;
+    width: 22%;
+}
+
+/* ------------------------------------------------Galary-------------------------------------- */
+
+.galary{
+
+    padding-top: 80px;
+    width: 100%;
+}
+
+.galary_container{
+
+    width: 70%;
+    height: 500px;
+    /* background-color: skyblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.gal_frame1{
+
+    width: 50%;
+    height: 500px;
+    /* background-color: rgb(0, 148, 148); */
+    display: flex;
+    flex-direction: column;
+}
+
+.gal_frame1_img1{
+
+    height: 230px;
+    width: 100%;
+    background-image: url(../Media/gal_1.jpg);
+    background-size: cover;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.gal_frame1_txt{
+
+    color: white;
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.gal_book_btn{
+
+    margin-left: 20px;
+    border: none;
+    outline:none;
+    background-color: #fecf24;
+    width: 30%;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 12px 15px 12px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.gal_frame1_img2{
+
+    height: 295px;
+    width: 100%;
+    /* background-color: rgba(133, 5, 116, 0.636); */
+    background-image: url(../Media/gal_2.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal_img2_txt{
+
+    color: white;
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.gal_frame2{
+
+    width: 15%;
+    height: 500px;
+    /* background-color: rgb(205, 138, 3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gal_frm2_img2_css{
+
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.gal_frm2_img1{
+
+    height: 200px;
+    background-image: url(../Media/gal_1_singapore.jpg);
+}
+
+.gal_frm2_img2{
+
+    height: 120px;
+    background-image: url(../Media/gal_2_italy.jpg);
+}
+
+.gal_frm2_img3{
+
+
+    height: 120px;
+    background-image: url(../Media/gal_3_paris.jpg);
+}
+
+.gal_frm2_txt{
+
+    color: white;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 200;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.gal_frame3{
+
+    width: 15%;
+    height: 500px;
+    /* background-color: rgb(150, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gal_frm3_img1{
+
+    height: 200px;
+    background-image: url(../Media/gal_5_AbuDhabi.jpg);
+}
+
+.gal_frm3_img2{
+
+    height: 120px;
+    background-image: url(../Media/gal_4_amsterdam.jpg);
+}
+
+.gal_frm3_img3{
+
+
+    height: 120px;
+    background-image: url(../Media/gal_6_Malasia.jpg);
+}
+
+.gal_frame4{
+
+    width: 15%;
+    height: 500px;
+    /* background-color: rgb(220, 179, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gal_frm4_img1{
+
+    height: 200px;
+    background-image: url(../Media/gal_7Thailand.jpg);
+}
+
+.gal_frm4_img2{
+
+    height: 120px;
+    background-image: url(../Media/gal_8Australia.jpg);
+}
+
+.gal_frm4_img3{
+
+
+    height: 120px;
+    background-image: url(../Media/gal_9_USA.jpg);
+}
+
+.gal_frame1_img1:hover,
+.gal_frame1_img2:hover,
+.gal_frm2_img1:hover,
+.gal_frm2_img2:hover,
+.gal_frm2_img3:hover,
+.gal_frm3_img1:hover,
+.gal_frm3_img2:hover,
+.gal_frm3_img3:hover,
+.gal_frm4_img1:hover,
+.gal_frm4_img2:hover,
+.gal_frm4_img3:hover{
+
+    transform: scale(1.02);
+}
+
+/* ------------------------------------------------Group Offer Container-------------------------------------- */
+
+.grp_offer_container{
+
+    padding-top: 80px;
+    /* padding-bottom: 40px; */
+    width: 100%;
+    /* background-color: bisque; */
+}
+
+.grp_offer{
+
+    height: 120px;
+    width: 70%;
+    border: 3px solid #f37022;;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgba(243,112,34,0.3);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grp_ofr_img{
+
+    height: 100px;
+    background-color: blueviolet;
+    background-image: url(../Media/group_tour_enqiry.webp);
+    background-size: cover;
+    scale: 1;
+    width: 10%;
+    margin-left: 15px;
+    border-radius: 12px;
+}
+
+.grp_ofr_txt_container{
+
+    height: 100px;
+    /* background-color: red; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    /* align-items: center; */
+}
+
+.grp_ofr_txt{
+
+    color: #f37022;
+    line-height: 40px;
+    font-family: poppins;
+}
+
+.grp_ofr_txt_small{
+
+    font-size: 13px;
+    font-family: poppins;
+    color: grey;
+}
+
+.grp_ofr_btn{
+
+    height: 100px;
+    /* background-color: blueviolet; */
+    width: 20%;
+    margin-right: 15px;
+}
+
+.grp_ofr_btn1{
+
+    padding: 15px 20px 15px 20px;
+    background-color: #f36f22;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: poppins;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* ------------------------------------------------PLACES TO VISIT-------------------------------------- */
+
+.place_container{
+
+    width: 100%;
+    /* padding-bottom: 50px; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------common css for this section ----------------- */
+
+.place_css{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------------------------------------INDIA------------------------------------------- */
+
+.place_india{
+
+    height: 400px;
+    width: 70%;
+    margin-bottom: 20px;
+    /* border: 3px solid red; */
+}
+
+.place_title{
+
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.place_txt{
+
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1.3px;
+}
+
+.place_txt::after{
+
+    content: "";
+    display:flex;
+    width: 60px;
+    height: 2px;
+    background:#ff5300;
+    margin: 10px 0 10px 0;
+
+}
+
+.place_slider{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider_ftr_txt{
+
+    /* width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center; */
+    color: white;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.place_slider_1{
+
+    height: 300px;
+    width: 23%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.place_slider_1:first-child{
+
+    background-image: url(../Media/TourDestination/India/Ladakh-1.jpg);
+    background-size: cover ;
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); */
+}
+
+.place_slider_1:nth-child(2){
+
+    background-image: url(../Media/TourDestination/India/HP2.jpg);
+    background-size: cover ;
+}
+
+.place_slider_1:nth-child(3){
+
+    background-image: url(../Media/TourDestination/India/Kerla3.jpg);
+    background-size: cover ;
+}
+
+.place_slider_1:nth-child(4){
+
+    background-image: url(../Media/TourDestination/India/Goa4.jpg);
+    background-size: cover ;
+}
+
+/* ------------------------------------SOUTH EAST ASIA------------------------------- */
+
+.place_slider_2{
+
+    height: 300px;
+    width: 23%;
+    border-radius: 12px;
+}
+
+.place_slider_2:first-child{
+
+    background-image: url(../Media/TourDestination/SouthAsia/Thailand1.jpg);
+    background-size: cover ;
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); */
+}
+
+.place_slider_2:nth-child(2){
+
+    background-image: url(../Media/TourDestination/SouthAsia/Singapore2.jpg);
+    background-size: cover ;
+}
+
+.place_slider_2:nth-child(3){
+
+    background-image: url(../Media/TourDestination/SouthAsia/Bali3.jpg);
+    background-size: cover ;
+}
+
+.place_slider_2:nth-child(4){
+
+    background-image: url(../Media/TourDestination/SouthAsia/Vietnam4.jpg);
+    background-size: cover ;
+}
+
+
+/* ------------------------------------EUROPE------------------------------- */
+
+.place_slider_3{
+
+    height: 300px;
+    width: 23%;
+    border-radius: 12px;
+}
+
+.place_slider_3:first-child{
+
+    background-image: url(../Media/TourDestination/Europe/1-Switzerland.jpg);
+    background-size: cover ;
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); */
+}
+
+.place_slider_3:nth-child(2){
+
+    background-image: url(../Media/TourDestination/Europe/2-Greece.jpg);
+    background-size: cover ;
+}
+
+.place_slider_3:nth-child(3){
+
+    background-image: url(../Media/TourDestination/Europe/3-Turkey.jpg);
+    background-size: cover ;
+}
+
+.place_slider_3:nth-child(4){
+
+    background-image: url(../Media/TourDestination/Europe/4-Paris.jpg);
+    background-size: cover ;
+}
+
+
+/* ------------------------------------ISLAND ESCAPE------------------------------- */
+
+.place_slider_4{
+
+    height: 300px;
+    width: 23%;
+    border-radius: 12px;
+}
+
+.place_slider_4:first-child{
+
+    background-image: url(../Media/TourDestination/IslandEscape/1-Maldives.jpg);
+    background-size: cover ;
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); */
+}
+
+.place_slider_4:nth-child(2){
+
+    background-image: url(../Media/TourDestination/IslandEscape/2-Andaman.jpg);
+    background-size: cover ;
+}
+
+.place_slider_4:nth-child(3){
+
+    background-image: url(../Media/TourDestination/IslandEscape/3-Mauritius.jpg);
+    background-size: cover ;
+}
+
+.place_slider_4:nth-child(4){
+
+    background-image: url(../Media/TourDestination/IslandEscape/4-Philippines.jpg);
+    background-size: cover ;
+}
+
+/* ----------------------------------Moving Slider------------------------------- */
+
+.js_slider{
+
+    height: 300px;
+    width: 100%;
+    /* margin-bottom: 40px; */
+}
+
+.js_slider_container{
+
+    width: 70%;
+    height: 300px;
+    background-color:bisque;
+    display: flex;
+    overflow: hidden;
+}
+
+.js_slider_holder{
+
+    display: flex;
+    width: 700%;
+    animation-name: js_slider;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-play-state: running;
+
+}
+
+@keyframes js_slider{
+
+    7.1428%{
+        margin-left: -103%;
+    }
+
+    14.285%{
+
+        margin-left: -103%;
+    }
+
+    21.428%{
+
+        margin-left: -204%;
+    }
+
+    28.568%{
+
+        margin-left: -204%;
+    }
+
+    35.71%{
+
+        margin-left: -305%;
+    }
+    42.852%{
+
+        margin-left: -305%;
+    }
+
+    49.994%{
+
+        margin-left: -407%;
+    }
+
+    57.136%{
+
+        margin-left: -407%;
+    }
+
+    64.278%{
+
+        margin-left: -509%;
+    }
+
+    71.42%{
+
+        margin-left: -509%;
+    }
+
+    78.562%{
+
+        margin-left: -611%;
+    }    
+    
+    85.704%{
+
+        margin-left: -611%;
+    }
+
+    92.846%{
+
+        margin-left: -712%;
+    }    
+    
+    100%{
+
+        margin-left: -712%;
+    }
+}
+
+
+/* --------------------------------------------------------Packages---------------------------------------------------- */
+
+.moving_packages{
+
+    height: 600px;
+    width: 70%;
+}
+
+.place_txt_css{
+
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.place_packages_container{
+
+    width: 100%;
+    margin-top: 20px;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.package_1{
+
+    height: 450px;
+    width: 22%;
+}
+
+.package_img{
+
+    height: 330px;
+    width: 100%;
+    border-radius: 12px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.package_image_1{
+
+    background-image: url(../Media/GardenOfDreams.avif);
+    background-size: cover;
+}
+
+.package_image_2{
+
+    background-image: url(../Media/OBLUSelect.avif);
+    background-size: cover;
+}
+
+.package_image_3{
+
+    background-image: url(../Media/DharamShala.avif);
+    background-size: cover;
+}
+
+.package_image_4{
+
+    background-image: url(../Media/Cordelia.avif);
+    background-size: cover;
+}
+
+.package_ftr_txt{
+
+    color: white;
+    font-family: poppins;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.package_text{
+
+    font-family: poppins;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.pck_icn{
+
+    color: gold;
+}
+
+.package_review{
+
+    color: rgb(92, 91, 91);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.package_price{
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+.package_image_5{
+
+    background-image: url(../Media/HighlightsofLeh.webp);
+    background-size: cover;
+}
+
+.package_image_6{
+
+    background-image: url(../Media/LehLaddakSighting.webp);
+    background-size: cover;
+}
+
+.package_image_7{
+
+    background-image: url(../Media/LehLadakhTour.webp);
+    background-size: cover;
+}
+
+.package_image_8{
+
+    background-image: url(../Media/RomanticGatewayLadakh.avif);
+    background-size: cover;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.package_image_9{
+
+    background-image: url(../Media/Museumofthefuture.avif);
+    background-size: cover;
+}
+
+.package_image_10{
+
+    background-image: url(../Media/Burjkhalifa.avif);
+    background-size: cover;
+}
+
+.package_image_11{
+
+    background-image: url(../Media/DubaiAquarium.webp);
+    background-size: cover;
+}
+
+.package_image_12{
+
+    background-image: url(../Media/GlobalVillage.avif);
+    background-size: cover;
+}
+
+
+/* -------------------------------------------------DESTINATION NEAR YOU------------------------------------------------- */
+
+.near_dest{
+
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.near_dst_container{
+
+    width: 70%;
+    /* background-color: green; */
+    /* height: 360px; */
+}
+
+.destination_btn_container{
+
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.dst_btn{
+
+    padding: 12px 22px 12px 22px;
+    background-color: white;
+    border-radius: 14px;
+    border: 1px solid rgb(88, 88, 88);
+    margin-right: 30px;
+    font-family: poppins;
+    color: rgb(88, 88, 88);
+}
+
+.dst_btn:first-child{
+
+    color: #ff5300;
+    border: 1px solid #ff5300;
+}
+
+.dst_btn:hover{
+
+    color: #ff5300;
+    border: 1px solid #ff5300;
+    cursor: pointer;
+}
+
+.destination_holder{
+
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination1{
+
+    height: 90px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.dst_img-holder{
+
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+    border-radius: 12px;
+    background-size: cover;
+    box-shadow: inset 0, 0, 5px rgba(0,0,0,0.4);
+}
+
+.dst_txt{
+
+    color: rgb(78, 78, 78);
+    font-family: poppins;
+}
+
+.dst_img-1{
+
+    background-image: url(../Media/Coorg.jpg);
+}
+
+.dst_img-2{
+
+    background-image: url(../Media/Chikmagalur.jpg);
+}
+
+.dst_img-3{
+
+    background-image: url(../Media/Wayanad.jpg);
+}
+
+.dst_img-4{
+
+    background-image: url(../Media/Pondicherry.jpg);
+}
+
+.dst_img-5{
+
+    background-image: url(../Media/Ooty.jpg);
+}
+
+.dst_img-6{
+
+    background-image: url(../Media/Munnar.jpg);
+}
+
+.dst_img-7{
+
+    background-image: url(../Media/Kabini.jpg);
+}
+
+.destination1:hover{
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dst_btn_all{
+
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    outline: none;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #ff5300;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+
+.dst_btn_all:hover{
+
+    background-color: white;
+    color: #ff5300;
+    cursor: pointer;
+    outline: 1px solid #ff5300;
+}
+
+.destination1:last-child:hover{
+
+    box-shadow: none;
+}
+
+
+/* -------------------------------------GIFT CARD CONTAINER----------------------------------- */
+
+.gift_card_container{
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+}
+
+.gift_card{
+
+    width: 70%;
+    height: 250px;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gift_crd_img{
+
+    width: 50%;
+}
+
+.gift_card_text{
+
+    width: 50%;
+    text-align: center;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.gft_txt1{
+
+    color: rgb(62, 62, 62);
+    letter-spacing: 1px;
+}
+
+.gft_txt2{
+
+    letter-spacing: 1px;
+}
