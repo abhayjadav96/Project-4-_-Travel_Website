@@ -407,7 +407,7 @@
     align-items: center;
     /* justify-content: center; */
     font-size: 14px;
-    color: rgb(170, 170, 170);
+    color: rgb(170, 170, 169);
     height: 80px;
     width: 70%;
     /* background-color: red; */
@@ -1568,7 +1568,7 @@
 
 .footer_section{
 
-    height: 60vh;
+    height: 80vh;
     /* background-color: red; */
     position: relative;
     display: flex;
@@ -1744,11 +1744,4 @@
     padding-bottom: 20px;
     width: 100%;
     
-}
-
-.copyright_title{
-
-    color: white;
-    font-family: poppins;
-    font-size: 14px;
 }
