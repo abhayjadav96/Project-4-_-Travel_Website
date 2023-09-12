@@ -1,0 +1,23 @@
+@media (min-width: 320px) and (max-width:480px) {
+
+    /* Items to remoev */
+    
+    .search_bar, .hp_buttons, .search_header, .header_right{
+        display: none;
+    }    
+    
+    /* Editing header section */
+
+    .container{
+
+        width: 100%;
+        margin-left: 5%;
+        border-bottom: none;
+    }
+
+    .logo{
+
+        width: 60%;
+    }
+
+}
