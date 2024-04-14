@@ -61,6 +61,11 @@
     padding: 14px 0 10px 0;
 }
 
+/* .mob_men_icon{
+
+    display: none;
+} */
+
 .search_bar{
     display: flex;
     width: 50%;
